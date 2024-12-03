@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Header = () => {
   const [visibleDropdown, setVisibleDropdown] = useState(null);
@@ -18,12 +18,22 @@ const Header = () => {
     setTimeoutId(id);
   };
 
+  const servicesMenu = [
+    { label: "Domestic Packers and Movers", path: "/services/domestic-packers-and-movers" },
+    { label: "House Shifting", path: "/services/house-shifting" },
+    { label: "Vehicle Shifting", path: "/services/vehicle-shifting" },
+    { label: "Hire a Mini Truck", path: "/services/hire-a-mini-truck" },
+    { label: "Storage Facility", path: "/services/storage-facility" },
+    { label: "International Relocations", path: "/services/international-relocation" },
+  ];
+
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto flex flex-wrap justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <span className="text-black">xyz</span>
+          <a href="/">Logo</a>
+          
         </div>
 
         {/* Contact */}
@@ -33,49 +43,42 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="space-x-4 text-black relative flex items-center">
-          {[
-            {
-              name: 'Services',
-              items: [
-                'Domestic Packers and Movers',
-                'House Shifting',
-                'Vehicle Shifting',
-                'Hire a Mini Truck',
-                'Storage Facility',
-                'International Relocations',
-              ],
-            },
-            {
-              name: 'Blog',
-              items: ['Tips for Moving', 'Storage Tips', 'FAQs'],
-            },
-          ].map((menu, index) => (
-            <div
-              key={index}
-              className="relative"
-              onMouseEnter={() => handleMouseEnter(menu.name)}
-              onMouseLeave={handleMouseLeave}
+          <div
+            className="relative"
+            onMouseEnter={() => handleMouseEnter("Services")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button
+              className="hover:underline cursor-pointer focus:outline-none"
+              aria-expanded={visibleDropdown === "Services"}
             >
-              <button className="hover:underline cursor-pointer focus:outline-none">
-                {menu.name}
-              </button>
-              {/* Dropdown */}
-              {visibleDropdown === menu.name && (
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg border rounded z-50">
-                  <ul className="text-left">
-                    {menu.items.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              Services
+            </button>
+            {/* Dropdown */}
+            {visibleDropdown === "Services" && (
+              <div
+                className="absolute left-0 mt-2 w-56 bg-white shadow-lg border rounded z-50"
+                role="menu"
+              >
+                <ul className="text-left">
+                  {servicesMenu.map((item, idx) => (
+                    <li key={idx} role="menuitem">
+                      <a
+                        href={item.path}
+                        className="block px-4 py-2 hover:bg-gray-100 text-sm"
                       >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          ))}
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <a href="#blog" className="hover:underline">
+            Blog
+          </a>
 
           <a href="#about" className="hover:underline">
             About Us
