@@ -76,11 +76,11 @@ const Header = () => {
             )}
           </div>
 
-          <a href="#blog" className="hover:underline">
+          <a href="/blog" className="hover:underline">
             Blog
           </a>
 
-          <a href="#about" className="hover:underline">
+          <a href="/about-us" className="hover:underline">
             About Us
           </a>
         </nav>
