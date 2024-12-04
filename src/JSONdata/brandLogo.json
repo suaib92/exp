@@ -1,0 +1,49 @@
+{
+    "companies": [
+      {
+        "description": "Big Basket",
+        "image-url": "https://i.pinimg.com/736x/92/a1/25/92a125ad5f32f64b7ae0d0e77f0a9fea.jpg"
+      },
+      {
+        "description": "Aditya Birla Capital",
+        "image-url": "https://static.brandirectory.com/logos/adio001_aditya_birla.jpg"
+      },
+      {
+        "description": "Asian Paints",
+        "image-url": "https://www.equitybulls.com/equitybullsadmin/uploads/Asian%20Paints%20Limited%20Logo%202.jpg"
+      },
+      {
+        "description": "Jio",
+        "image-url": "https://www.tripurastarnews.com/wp-content/uploads/2024/01/04-01-2024-Pic-JIo-1.jpeg"
+      },
+      {
+        "description": "Birlasoft",
+        "image-url": "https://nh1design.com/wp-content/uploads/2018/09/Birlasoft-logo-with-tagline.jpg"
+      },
+      {
+        "description": "CBRE",
+        "image-url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/CBRE_Logo.png"
+      },
+      {
+        "description": "Directi",
+        "image-url": "https://dice.tech/wp-content/uploads/2024/09/directi-logo.png"
+      },
+      {
+        "description": "General Electric",
+        "image-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFA06ml5uRrX_YGmccxH2T_KHPkW2HpCA-k_Y8nXwzMQRK3KIE"
+      },
+      {
+        "description": "Raymond",
+        "image-url": "https://i.pinimg.com/originals/9d/94/0f/9d940f32dbee75bce031a4e10eb50fe8.png"
+      },
+      {
+        "description": "Reliance",
+        "image-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvUURX0_v5WV9tZcJ6b6OF5XXZUAU8BKYlw&s"
+      },
+      {
+        "description": "WeWork",
+        "image-url": "https://download.logo.wine/logo/WeWork/WeWork-Logo.wine.png"
+      }
+    ]
+  }
+  
