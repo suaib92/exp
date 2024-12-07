@@ -15,7 +15,7 @@ import VehicleShifting from "./Pages/Services/vehicleShifting";
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen"> {/* Ensures the layout spans the entire viewport height */}
+      <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />
 
