@@ -1,0 +1,74 @@
+[
+    {
+      "name": "Madhu",
+      "route": "Bangalore to Mumbai",
+      "stars": 5,
+      "content": "I wish to express my appreciation for your excellent transportation services rendered, for transporting my personal household goods, from Bangalore to Mumbai. Goods delivered on time, and more importantly, with no damage whatsoever. Pikkol has also assembled the goods ."
+    },
+    {
+      "name": "Saranya",
+      "route": "Mumbai to Mumbai",
+      "stars": 5,
+      "content": "Extremely satisfied with their service. I had a movement Intra-Mumbai. Their rates were extremely reasonable as compared to other giants in the market. Service was on time, prompt, and as promised. The booking of the service is seamless. Highly recommend their service."
+    },
+    {
+      "name": "Azhar",
+      "route": "Delhi to Pune",
+      "stars": 5,
+      "content": "It was a great experience. The luggage was delivered in one piece. I am happy I chose Pikkol. Highly recommend!"
+    },
+    {
+      "name": "Rajesh",
+      "route": "Chennai to Bangalore",
+      "stars": 5,
+      "content": "The service was fantastic! My belongings arrived safely and on time. The team was professional, and the overall experience was stress-free. Highly recommend Pikkol for moving services."
+    },
+    {
+      "name": "Priya",
+      "route": "Hyderabad to Delhi",
+      "stars": 5,
+      "content": "Very efficient and reliable service. My items were packed carefully and delivered in perfect condition. The crew was punctual and polite. Excellent experience overall!"
+    },
+    {
+      "name": "Karthik",
+      "route": "Mumbai to Pune",
+      "stars": 5,
+      "content": "I had a seamless experience with Pikkol. The team was courteous, and the packing was top-notch. My goods reached the destination without any damage. Highly recommend!"
+    },
+    {
+      "name": "Neha",
+      "route": "Kolkata to Bangalore",
+      "stars": 5,
+      "content": "I had a great experience with Pikkol. The movers were efficient, and everything was delivered on time without any issues. Very happy with their service."
+    },
+    {
+      "name": "Vikram",
+      "route": "Chennai to Hyderabad",
+      "stars": 5,
+      "content": "Pikkol made my relocation so easy. The process was smooth, and everything arrived without any damage. Their service is professional and affordable. I would recommend them anytime."
+    },
+    {
+      "name": "Simran",
+      "route": "Delhi to Bangalore",
+      "stars": 5,
+      "content": "Very happy with the service provided. The team handled my goods with care, and the delivery was prompt. The cost was reasonable as well. I will definitely use Pikkol again!"
+    },
+    {
+      "name": "Ravi",
+      "route": "Mumbai to Chennai",
+      "stars": 5,
+      "content": "Fantastic service! Pikkol made my relocation hassle-free. The team was punctual, and the packaging was done professionally. My goods were safely transported without any damage."
+    },
+    {
+      "name": "Kruvi",
+      "route": "Hyderabad to Mumbai",
+      "stars": 5,
+      "content": "Fantastic service! Pikkol made my relocation hassle-free. The team was punctual, and the packaging was done professionally. My goods were safely transported without any damage."
+    },
+    {
+      "name": "Srmivi",
+      "route": "Pune to Hyderabad",
+      "stars": 5,
+      "content": "Fantastic service! Pikkol made my relocation hassle-free. The team was punctual, and the packaging was done professionally. My goods were safely transported without any damage."
+    }
+]
