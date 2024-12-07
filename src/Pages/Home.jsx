@@ -22,15 +22,13 @@ const Home = () => {
             {/* Hero Content */}
             <div className='flex flex-col items-center text-center lg:text-left lg:flex-row'>
               {/* Left Text Section */}
-              <div
-                className='w-full flex flex-col items-center justify-center space-y-4 text-center py-10'
-                
-              >
+              <div className='w-full flex flex-col items-center justify-center space-y-4 text-center py-10'>
                 <h1 className='text-6xl font-bold text-blue-500'>MOVE</h1>
                 <h2 className='text-xl font-medium text-blue-500'>
                   Move anything, anywhere
                   <br />
-                  Zero hassles. <span className='text-blue-500'>#HappyMoving</span>
+                  Zero hassles.{' '}
+                  <span className='text-blue-500'>#HappyMoving</span>
                 </h2>
                 <a
                   href='#'
@@ -83,7 +81,7 @@ const Home = () => {
               className='w-full h-full object-contain'
             />
           </div>
-          <div className='w-full md:w-1/2 text-center md:text-left flex flex-col justify-center'>
+          <div className='w-full md:w-1/2 text-left flex flex-col justify-center'>
             <h2 className='text-3xl font-bold mb-4'>
               Pikkol <span className='italic'>(pik-kol)</span>
             </h2>
@@ -112,7 +110,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className='absolute bottom-0 right-0 h-[600px] w-[800px] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
+          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
       </section>
@@ -120,12 +118,12 @@ const Home = () => {
       {/* Training Professionals */}
       <section className='relative min-h-screen w-full overflow-hidden bg-white'>
         <div
-          className='absolute left-0 top-0 h-[300px] w-[600px] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
+          className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
           style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
         />
         <div className='relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8'>
           <div className='grid gap-12 lg:grid-cols-2'>
-            <div className='space-y-8'>
+            <div className='space-y-8  my-20'>
               <h2 className='text-7xl font-bold text-gray-900'>600+</h2>
               <h3 className='text-4xl font-medium text-gray-900 mt-2'>
                 Trained professionals
@@ -148,7 +146,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className='absolute bottom-0 right-0 h-[600px] w-[800px] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
+          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
       </section>
@@ -214,7 +212,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className='absolute bottom-0 right-0 h-[600px] w-[800px] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
+          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#3498db]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
       </section>
@@ -224,9 +222,10 @@ const Home = () => {
       <section className=' relative min-h-screen w-full overflow-hidden py-16 bg-white'>
         <div className='container mx-auto px-4'>
           <div
-            className='absolute left-0 top-0 h-[300px] w-[600px] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
+            className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
             style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
           />
+
           <h2 className='text-4xl font-semibold text-center mb-6'>
             We are trusted by many
           </h2>
