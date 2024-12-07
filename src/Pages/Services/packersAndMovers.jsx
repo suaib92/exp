@@ -90,11 +90,11 @@ const PackersAndMovers = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-7/12 px-4 mb-8 md:mb-0">
               <h1 className="text-4xl font-bold leading-tight text-gray-900">
-                Packers and Movers in{" "}
-                {selectedStateObject
-                  ? selectedStateObject.label
-                  : "Your Selected State"}
+                {selectedState
+                  ? `Packers and Movers in ${selectedStateObject.label}`
+                  : "Packers and Movers"}
               </h1>
+
               <p className="text-xl text-gray-600 mt-2">
                 Redefining relocation services
               </p>
@@ -348,12 +348,15 @@ const PackersAndMovers = () => {
       <section>
         <div className="container mx-auto p-6">
           <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">
-            {selectedStateObject ? (
-              `Packers and Movers Prices in ${selectedStateObject.label}`
-            ) : (
-              <a href="#form">"Please select a state to view prices"</a>
-            )}
+            {selectedState
+              ? `Packers and Movers Prices in ${selectedStateObject.label}`
+              : "Packers and Movers Prices"}
           </h2>
+          {!selectedState && (
+            <a href="#form" className="text-center block text-gray-600">
+              Please select a state to view prices
+            </a>
+          )}
 
           {/* Loading Placeholder Table */}
           {!selectedStateObject || !selectedStateObject?.prices ? (
@@ -744,9 +747,17 @@ const PackersAndMovers = () => {
           <div className="max-w-7xl mx-auto px-6">
             <a href="#form" className="block mb-8">
               <h2 className="text-3xl font-bold text-center text-gray-900">
-                Please select a state to See Locations We Serve In
+                {selectedState
+                  ? `Locations We Serve In ${selectedStateObject.label}`
+                  : "Locations We Serve"}
               </h2>
+              {!selectedState && (
+                <small className="text-center block mt-2 text-gray-600">
+                  Please select a state to see the locations we serve in.
+                </small>
+              )}
             </a>
+
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
               {[...Array(5)].map((_, index) => (
                 <div
