@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import statesData from "../../JSONdata/states.json";
-import tableData from "../../JSONdata/tableData.json";
 import reviews from "../../JSONdata/reviews.json";
 import BrandJson from "../../JSONdata/brandLogo.json";
 import packingData from "../../JSONdata/packingPreviews.json";
@@ -91,7 +90,10 @@ const PackersAndMovers = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-7/12 px-4 mb-8 md:mb-0">
               <h1 className="text-4xl font-bold leading-tight text-gray-900">
-                Packers and Movers
+                Packers and Movers in{" "}
+                {selectedStateObject
+                  ? selectedStateObject.label
+                  : "Your Selected State"}
               </h1>
               <p className="text-xl text-gray-600 mt-2">
                 Redefining relocation services
