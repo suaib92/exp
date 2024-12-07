@@ -22,34 +22,19 @@ const Home = () => {
             {/* Hero Content */}
             <div className='flex flex-col items-center text-center lg:text-left lg:flex-row'>
               {/* Left Text Section */}
-              <div className='lg:w-1/2'>
-                <h1 className='text-5xl lg:text-6xl font-extrabold leading-tight mb-4'>
-                  <a
-                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                    className='hover:underline'
-                  >
-                    Move
-                  </a>
-                </h1>
-                <h2 className='text-3xl font-semibold mb-4'>
-                  <a
-                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                    className='hover:text-blue-400 transition'
-                  >
-                    Move anything, anywhere
-                  </a>
+              <div
+                className='w-full flex flex-col items-center justify-center space-y-4 text-center py-10'
+                
+              >
+                <h1 className='text-6xl font-bold text-blue-500'>MOVE</h1>
+                <h2 className='text-xl font-medium text-blue-500'>
+                  Move anything, anywhere
+                  <br />
+                  Zero hassles. <span className='text-blue-500'>#HappyMoving</span>
                 </h2>
-                <p className='text-lg font-light mb-6'>
-                  <a
-                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                    className='hover:underline'
-                  >
-                    Zero hassles. #HappyMoving
-                  </a>
-                </p>
                 <a
-                  href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                  className='bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition'
+                  href='#'
+                  className='no-underline bg-blue-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-700 transition duration-300'
                 >
                   Calculate Your Moving Cost
                 </a>
@@ -76,11 +61,11 @@ const Home = () => {
                     India's first pure play digital brand in relocation
                   </p>
                 </div>
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg col-span-full'>
-                  <p className='text-gray-600'>Winner of</p>
-                  <div className='text-2xl font-semibold text-blue-600'>
-                    Emerge 50
-                  </div>
+
+                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                  <div className='text-5xl font-bold text-blue-500'>1</div>
+                  <span className='text-sm text-gray-600'>Winner of</span>
+                  <p className='text-gray-600 mt-2'>Emerge 50</p>
                 </div>
               </div>
             </div>
