@@ -9,71 +9,79 @@ import BrandJson from '../JSONdata/brandLogo.json';
 const Home = () => {
   return (
     <>
-      <section>
+      <section className='relative bg-gray-50'>
+        {/* Background with Overlay */}
         <div
-          className='relative bg-cover bg-center min-h-screen'
-          style={{ backgroundImage: `url(${HomeImage})` }}
+          className='relative bg-cover bg-center min-h-screen flex items-center justify-center'
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${HomeImage})`,
+          }}
         >
-          <div className='hero__content flex flex-col items-center text-center p-8'>
-            <h1 className='text-4xl font-bold text-black mb-4'>
-              <a
-                href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                className='hover:text-blue-600 transition'
-              >
-                Move
-              </a>
-            </h1>
-            <h2 className='text-2xl font-semibold text-black mb-2'>
-              <a
-                href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                className='hover:text-blue-600 transition'
-              >
-                Move anything, anywhere
-              </a>
-            </h2>
-            <p className='text-xl text-black mb-4'>
-              <a
-                href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                className='hover:text-blue-600 transition'
-              >
-                Zero hassles. #HappyMoving
-              </a>
-            </p>
-            <div className='mt-8'>
-              <a
-                href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
-                className='bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition'
-              >
-                Calculate Your Moving Cost
-              </a>
-            </div>
-            {/* Success Connector */}
-            <div className='flex justify-center mt-8 space-x-4'>
-              <div className='bg-white p-6 rounded-md w-1/3 text-center'>
-                <div className='text-4xl font-bold text-blue-500'>4.1</div>
-                <p className='text-sm text-gray-600'>
-                  Rated most trusted relocation firm on google
+          {/* Content Container */}
+          <div className='container mx-auto text-white px-8 lg:px-16'>
+            {/* Hero Content */}
+            <div className='flex flex-col items-center text-center lg:text-left lg:flex-row'>
+              {/* Left Text Section */}
+              <div className='lg:w-1/2'>
+                <h1 className='text-5xl lg:text-6xl font-extrabold leading-tight mb-4'>
+                  <a
+                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
+                    className='hover:underline'
+                  >
+                    Move
+                  </a>
+                </h1>
+                <h2 className='text-3xl font-semibold mb-4'>
+                  <a
+                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
+                    className='hover:text-blue-400 transition'
+                  >
+                    Move anything, anywhere
+                  </a>
+                </h2>
+                <p className='text-lg font-light mb-6'>
+                  <a
+                    href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
+                    className='hover:underline'
+                  >
+                    Zero hassles. #HappyMoving
+                  </a>
                 </p>
+                <a
+                  href='https://app.pikkol.com/order/new/basic-info?traffic=organic'
+                  className='bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition'
+                >
+                  Calculate Your Moving Cost
+                </a>
               </div>
-              <div className='bg-white p-6 rounded-md w-1/3 text-center'>
-                <div className='text-4xl font-bold text-blue-500'>1</div>
-                <span className='text-sm text-gray-600'>Lakh+</span>
-                <p className='text-sm text-gray-600'>happy moves completed</p>
-              </div>
-              <div className='bg-white p-6 rounded-md w-1/3 text-center'>
-                <div className='text-4xl font-bold text-blue-500'>1</div>
-                <span className='text-sm text-gray-600'>st</span>
-                <p className='text-sm text-gray-600'>
-                  India's first pure play digital brand in relocation
-                </p>
-              </div>
-            </div>
-            <div className='bg-white p-6 rounded-md mt-8 text-center'>
-              <div className='text-sm text-gray-600'>
-                Winner of <br />
-                <span className='text-2xl font-semibold text-blue-600'>
-                  Emerge 50
-                </span>
+
+              {/* Right Stats Section */}
+              <div className='lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 lg:mt-0'>
+                {/* Cards */}
+                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                  <div className='text-5xl font-bold text-blue-500'>4.1</div>
+                  <p className='text-gray-600 mt-2'>
+                    Rated most trusted relocation firm on Google
+                  </p>
+                </div>
+                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                  <div className='text-5xl font-bold text-blue-500'>1</div>
+                  <span className='text-sm text-gray-600'>Lakh+</span>
+                  <p className='text-gray-600 mt-2'>Happy moves completed</p>
+                </div>
+                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                  <div className='text-5xl font-bold text-blue-500'>1</div>
+                  <span className='text-sm text-gray-600'>st</span>
+                  <p className='text-gray-600 mt-2'>
+                    India's first pure play digital brand in relocation
+                  </p>
+                </div>
+                <div className='bg-white text-center p-6 rounded-lg shadow-lg col-span-full'>
+                  <p className='text-gray-600'>Winner of</p>
+                  <div className='text-2xl font-semibold text-blue-600'>
+                    Emerge 50
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -230,10 +238,10 @@ const Home = () => {
 
       <section className=' relative min-h-screen w-full overflow-hidden py-16 bg-white'>
         <div className='container mx-auto px-4'>
-        <div
-          className='absolute left-0 top-0 h-[300px] w-[600px] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
-          style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
-        />
+          <div
+            className='absolute left-0 top-0 h-[300px] w-[600px] -translate-x-1/4 -translate-y-1/4 bg-[#3498db]'
+            style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
+          />
           <h2 className='text-4xl font-semibold text-center mb-6'>
             We are trusted by many
           </h2>
