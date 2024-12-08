@@ -3,18 +3,19 @@ import React, { useState } from "react";
 const Header = () => {
   const [visibleDropdown, setVisibleDropdown] = useState(null);
   const [timeoutId, setTimeoutId] = useState(null);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleMouseEnter = (menuName) => {
     if (timeoutId) {
-      clearTimeout(timeoutId); // Clear any pending timeout
+      clearTimeout(timeoutId);
     }
     setVisibleDropdown(menuName);
   };
 
   const handleMouseLeave = () => {
     const id = setTimeout(() => {
-      setVisibleDropdown(null); // Hide the dropdown after delay
-    }, 300); // 300ms delay
+      setVisibleDropdown(null);
+    }, 300);
     setTimeoutId(id);
   };
 
@@ -28,20 +29,33 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto flex flex-wrap justify-between items-center py-4 px-6">
+    <header className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
           <a href="/">Logo</a>
         </div>
 
-        {/* Contact */}
-        <div className="flex items-center space-x-4">
-          <span className="flex items-center text-gray-700">0000000000</span>
-        </div>
+        {/* Toggle Button for Mobile */}
+        <button
+          className="text-gray-800 md:hidden focus:outline-none"
+          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            />
+          </svg>
+        </button>
 
         {/* Navigation */}
-        <nav className="space-x-8 text-black relative flex items-center">
+        <nav
+          className={`${
+            isMobileMenuOpen ? "block" : "hidden"
+          } md:flex md:items-center md:space-x-8 text-black relative`}
+        >
           <div
             className="relative"
             onMouseEnter={() => handleMouseEnter("Services")}
@@ -85,7 +99,7 @@ const Header = () => {
         </nav>
 
         {/* Get Prices Button */}
-        <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none transition duration-200">
+        <button className="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none transition duration-200">
           Get Prices
         </button>
       </div>
@@ -94,6 +108,15 @@ const Header = () => {
       <div className="bg-blue-500 text-center py-2 text-white font-semibold">
         We are happy to announce that Hybrid Shifting has acquired Pikkol.com
       </div>
+
+      {/* Mobile Get Prices Button */}
+      {isMobileMenuOpen && (
+        <div className="block md:hidden text-center mt-4">
+          <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none transition duration-200">
+            Get Prices
+          </button>
+        </div>
+      )}
     </header>
   );
 };
