@@ -176,7 +176,7 @@ const Home = () => {
               <h3 className='text-3xl md:text-4xl font-semibold text-gray-800'>
                 Containerized fleet
               </h3>
-              <p className='text-lg text-gray-600 leading-relaxed max-w-xl'>
+              <p className='text-lg text-gray-900 leading-relaxed max-w-xl'>
                 We ensure that the trucks allotted for your packing and moving
                 are fully equipped to handle your belongings in the safest
                 possible manner. The large array of dedicated trucks helps us to
