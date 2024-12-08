@@ -161,7 +161,7 @@ const Header = () => {
           </a>
           <a
             href='/about-us'
-            className='block py-2 text-gray-700 hover:bg-gray-100'
+            className='block py-2 text-gray-800 hover:bg-gray-100'
           >
             About Us
           </a>
