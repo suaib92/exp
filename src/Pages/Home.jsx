@@ -39,33 +39,35 @@ const Home = () => {
               </div>
 
               {/* Right Stats Section */}
-              <div className='lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 lg:mt-0'>
-                {/* Cards */}
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-blue-500'>4.1</div>
-                  <p className='text-gray-600 mt-2'>
-                    Rated most trusted relocation firm on Google
-                  </p>
-                </div>
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-blue-500'>1</div>
-                  <span className='text-sm text-gray-600'>Lakh+</span>
-                  <p className='text-gray-600 mt-2'>Happy moves completed</p>
-                </div>
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-blue-500'>1</div>
-                  <span className='text-sm text-gray-600'>st</span>
-                  <p className='text-gray-600 mt-2'>
-                    India's first pure play digital brand in relocation
-                  </p>
-                </div>
+              
+                <div className='lg:w-1/2 grid grid-cols-2 md:grid-cols-2 gap-6 mt-10 lg:mt-0'>
+                  {/* Cards */}
+                  <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                    <div className='text-5xl font-bold text-blue-500'>4.1</div>
+                    <p className='text-gray-600 mt-2'>
+                      Rated most trusted relocation firm on Google
+                    </p>
+                  </div>
+                  <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                    <div className='text-5xl font-bold text-blue-500'>1</div>
+                    <span className='text-sm text-gray-600'>Lakh+</span>
+                    <p className='text-gray-600 mt-2'>Happy moves completed</p>
+                  </div>
+                  <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                    <div className='text-5xl font-bold text-blue-500'>1</div>
+                    <span className='text-sm text-gray-600'>st</span>
+                    <p className='text-gray-600 mt-2'>
+                      India's first pure play digital brand in relocation
+                    </p>
+                  </div>
 
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-blue-500'>1</div>
-                  <span className='text-sm text-gray-600'>Winner of</span>
-                  <p className='text-gray-600 mt-2'>Emerge 50</p>
+                  <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
+                    <div className='text-5xl font-bold text-blue-500'>1</div>
+                    <span className='text-sm text-gray-600'>Winner of</span>
+                    <p className='text-gray-600 mt-2'>Emerge 50</p>
+                  </div>
                 </div>
-              </div>
+              
             </div>
           </div>
         </div>

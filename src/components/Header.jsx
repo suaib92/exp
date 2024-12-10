@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const Header = () => {
   const [visibleDropdown, setVisibleDropdown] = useState(null);
@@ -39,13 +40,15 @@ const Header = () => {
       <div className='container mx-auto flex flex-wrap justify-between items-center py-4 px-6'>
         {/* Logo */}
         <div className='text-2xl font-bold text-gray-800'>
-          <a href='/'>Logo</a>
+          <a className='no-underline' href='/'>
+            Logo
+          </a>
         </div>
 
         {/* Contact */}
         <div className='hidden lg:flex items-center space-x-4'>
           <span className='flex items-center text-gray-700'>
-            Contact: 000-000-0000
+            <FaPhoneAlt className='mr-2' /> 000-000-0000
           </span>
         </div>
 
@@ -108,13 +111,13 @@ const Header = () => {
 
           <a
             href='/blog'
-            className='hover:underline text-lg font-medium text-gray-700'
+            className=' no-underline first-letter:hover:underline text-lg font-medium text-gray-700'
           >
             Blog
           </a>
           <a
             href='/about-us'
-            className='hover:underline text-lg font-medium text-gray-700'
+            className=' no-underline hover:underline text-lg font-medium text-gray-700'
           >
             About Us
           </a>
