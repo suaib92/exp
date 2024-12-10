@@ -271,6 +271,90 @@ const vehicleShifting = () => {
         </div>
       </section>
 
+
+      <section>
+  <div className="container mx-auto p-6">
+    <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">
+      {selectedState
+        ? `Packers and Movers Prices in ${selectedStateObject.label}`
+        : 'Packers and Movers Prices'}
+    </h2>
+    {!selectedState && (
+      <a href="#form" className="text-center block text-gray-600">
+        Please select a state to view prices
+      </a>
+    )}
+
+    {selectedStateObject && selectedStateObject.prices ? (
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse border border-gray-300 rounded-lg shadow-md">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                Move Type/Distance
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                Within City
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                Up to 350km
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                350-750km
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                750-1200km
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                1200-1700km
+              </th>
+              <th className="border border-gray-300 px-6 py-3 text-left text-sm font-medium text-gray-600 bg-gray-50">
+                1700+ km
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {selectedStateObject.prices.map((priceRow, index) => (
+              <tr
+                key={index}
+                className={`${
+                  index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                } hover:bg-gray-200 transition duration-300`}
+              >
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.type}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.withinCity}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.upTo350}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.upTo750}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.upTo1200}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.upTo1700}
+                </td>
+                <td className="border border-gray-300 px-6 py-4 text-sm font-medium text-gray-700">
+                  {priceRow.beyond1700}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <div className="text-center text-gray-600">
+        No prices available for the selected state.
+      </div>
+    )}
+  </div>
+</section>
+
       {/* How Pikkol Packers & Movers Works sections */}
 
       <section>
