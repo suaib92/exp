@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-800 text-white py-10'>
+    <footer className='bg-[#f7ddc8] text-[#1d305b] py-10'>
       <div className='container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
         {/* Know More Section */}
         <div>
@@ -134,14 +134,14 @@ const Footer = () => {
               <i className='fab fa-youtube'></i>
             </a>
           </div>
-          <button className='bg-blue-500 text-white px-4 py-2 rounded mt-4 w-full sm:w-auto'>
+          <button className='bg-[#da8b3c] text-white px-4 py-2 rounded mt-4 w-full sm:w-auto'>
             Get Prices
           </button>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className='bg-gray-900 text-gray-400 text-sm text-center py-4 mt-6'>
+      <div className='bg-[#da8b3c] text-white text-sm text-center py-4 mt-6'>
         <div className='flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 px-6'>
           <p>🌍 Global / English</p>
           <p>Terms and Conditions | Privacy Policy</p>

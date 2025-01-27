@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
+import Logo from '../assets/logo-removebg.png';
 
 const Header = () => {
   const [visibleDropdown, setVisibleDropdown] = useState(null);
@@ -36,25 +37,25 @@ const Header = () => {
   ];
 
   return (
-    <header className='bg-white shadow-md'>
+    <header className='bg-[#f7ddc8] sticky top-0 shadow-md z-50'>
       <div className='container mx-auto flex flex-wrap justify-between items-center py-4 px-6'>
         {/* Logo */}
-        <div className='text-2xl font-bold text-gray-800'>
+        <div className='text-2xl font-bold text-[#1d305b]'>
           <a className='no-underline' href='/'>
-            Logo
+            <img src={Logo} alt='Pikkol Team' className='h-16 w-auto' />
           </a>
         </div>
 
         {/* Contact */}
         <div className='hidden lg:flex items-center space-x-4'>
-          <span className='flex items-center text-gray-700'>
+          <span className='flex items-center text-[#1d305b]'>
             <FaPhoneAlt className='mr-2' /> 000-000-0000
           </span>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className='lg:hidden text-gray-700'
+          className='lg:hidden text-[#1d305b]'
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label='Toggle mobile menu'
         >
@@ -75,7 +76,7 @@ const Header = () => {
         </button>
 
         {/* Navigation */}
-        <nav className='hidden lg:flex space-x-8 text-black relative'>
+        <nav className='hidden lg:flex space-x-8 text-[#1d305b] relative'>
           <div
             className='relative'
             onMouseEnter={() => handleMouseEnter('Services')}
@@ -98,7 +99,7 @@ const Header = () => {
                     <li key={idx} role='menuitem'>
                       <a
                         href={item.path}
-                        className='block px-4 py-2 hover:bg-gray-100 text-sm text-gray-800 font-medium transition-all duration-150 ease-in-out'
+                        className='block px-4 py-2 hover:bg-gray-100 text-sm text-[#1d305b] font-medium transition-all duration-150 ease-in-out'
                       >
                         {item.label}
                       </a>
@@ -111,25 +112,25 @@ const Header = () => {
 
           <a
             href='/blog'
-            className=' no-underline first-letter:hover:underline text-lg font-medium text-gray-700'
+            className=' no-underline first-letter:hover:underline text-lg font-medium text-[#1d305b]'
           >
             Blog
           </a>
           <a
             href='/about-us'
-            className=' no-underline hover:underline text-lg font-medium text-gray-700'
+            className=' no-underline hover:underline text-lg font-medium text-[#1d305b]'
           >
             About Us
           </a>
 
-          <button className='bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none transition duration-200'>
+          <button className='bg-[#da8b3c] text-white px-6 py-2 rounded-lg hover:bg-orange-400 focus:outline-none transition duration-200'>
             Get Prices
           </button>
         </nav>
       </div>
 
       {/* Banner */}
-      <div className='bg-blue-500 text-center py-2 text-white font-semibold'>
+      <div className='bg-[#da8b3c] text-center py-2 text-white font-semibold'>
         We are happy to announce that Hybrid Shifting has acquired Pikkol.com
       </div>
 
@@ -137,7 +138,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className='lg:hidden bg-white shadow-md p-4'>
           <button
-            className='block w-full text-left py-2 text-gray-700 font-medium'
+            className='block w-full text-left py-2 text-[#1d305b] font-medium'
             onClick={() => setVisibleDropdown('Services')}
           >
             Services
@@ -148,7 +149,7 @@ const Header = () => {
                 <li key={idx}>
                   <a
                     href={item.path}
-                    className='block px-4 py-2 hover:bg-gray-100 text-sm text-gray-800 font-medium'
+                    className='block px-4 py-2 hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
                   >
                     {item.label}
                   </a>
@@ -158,17 +159,17 @@ const Header = () => {
           )}
           <a
             href='/blog'
-            className='block py-2 text-gray-700 hover:bg-gray-100'
+            className='block py-2 text-[#1d305b] hover:bg-gray-100'
           >
             Blog
           </a>
           <a
             href='/about-us'
-            className='block py-2 text-gray-800 hover:bg-gray-100'
+            className='block py-2 text-[#1d305b] hover:bg-gray-100'
           >
             About Us
           </a>
-          <button className='bg-blue-500 text-white w-full py-2 rounded-lg hover:bg-blue-600'>
+          <button className='bg-[#da8b3c] text-white w-full py-2 rounded-lg hover:bg-orange-400'>
             Get Prices
           </button>
         </div>

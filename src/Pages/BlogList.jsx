@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { blogs } from '../JSONdata/blog.json';
-import blogImg from '../assets/blg.png';
+import blogImg from '../assets/blog_img.jpeg';
 
 export default function BlogList() {
   return (
