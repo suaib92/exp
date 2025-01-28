@@ -7,6 +7,10 @@ const Header = () => {
   const [timeoutId, setTimeoutId] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleNavigate = () => {
+    window.location.href = '/contact-us'; // This will redirect the user to the 'contact-us' page
+  };
+
   const handleMouseEnter = (menuName) => {
     if (timeoutId) {
       clearTimeout(timeoutId);
@@ -38,18 +42,18 @@ const Header = () => {
 
   return (
     <header className='bg-[#f7ddc8] sticky top-0 shadow-md z-50'>
-      <div className='container mx-auto flex flex-wrap justify-between items-center py-4 px-6'>
+      <div className='container mx-auto flex justify-between items-center py-2 px-4'>
         {/* Logo */}
-        <div className='text-2xl font-bold text-[#1d305b]'>
+        <div className='text-xl font-bold text-[#1d305b]'>
           <a className='no-underline' href='/'>
-            <img src={Logo} alt='Pikkol Team' className='h-16 w-auto' />
+            <img src={Logo} alt='Pikkol Team' className='h-12 w-auto' />
           </a>
         </div>
 
         {/* Contact */}
         <div className='hidden lg:flex items-center space-x-4'>
-          <span className='flex items-center text-[#1d305b]'>
-            <FaPhoneAlt className='mr-2' /> 000-000-0000
+          <span className='flex items-center text-sm text-[#1d305b]'>
+            <FaPhoneAlt className='mr-1' /> 000-000-0000
           </span>
         </div>
 
@@ -60,7 +64,7 @@ const Header = () => {
           aria-label='Toggle mobile menu'
         >
           <svg
-            className='w-6 h-6'
+            className='w-5 h-5'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'
@@ -76,22 +80,21 @@ const Header = () => {
         </button>
 
         {/* Navigation */}
-        <nav className='hidden lg:flex space-x-8 text-[#1d305b] relative'>
+        <nav className='hidden lg:flex space-x-6 text-sm text-[#1d305b] relative'>
           <div
             className='relative'
             onMouseEnter={() => handleMouseEnter('Services')}
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className='hover:underline cursor-pointer focus:outline-none text-lg font-medium text-gray-700'
+              className='hover:underline cursor-pointer focus:outline-none font-medium text-gray-700'
               aria-expanded={visibleDropdown === 'Services'}
             >
               Services
             </button>
-            {/* Dropdown */}
             {visibleDropdown === 'Services' && (
               <div
-                className='absolute left-0 mt-2 w-56 bg-white shadow-lg border rounded z-50 opacity-100 transition-all duration-300 ease-in-out'
+                className='absolute left-0 mt-2 w-48 bg-white shadow-lg border rounded z-50'
                 role='menu'
               >
                 <ul className='text-left'>
@@ -99,7 +102,7 @@ const Header = () => {
                     <li key={idx} role='menuitem'>
                       <a
                         href={item.path}
-                        className='block px-4 py-2 hover:bg-gray-100 text-sm text-[#1d305b] font-medium transition-all duration-150 ease-in-out'
+                        className='block px-3 py-1 hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
                       >
                         {item.label}
                       </a>
@@ -110,27 +113,24 @@ const Header = () => {
             )}
           </div>
 
-          <a
-            href='/blog'
-            className=' no-underline first-letter:hover:underline text-lg font-medium text-[#1d305b]'
-          >
+          <a href='/blog' className='no-underline hover:underline font-medium'>
             Blog
           </a>
           <a
             href='/about-us'
-            className=' no-underline hover:underline text-lg font-medium text-[#1d305b]'
+            className='no-underline hover:underline font-medium'
           >
             About Us
           </a>
 
-          <button className='bg-[#da8b3c] text-white px-6 py-2 rounded-lg hover:bg-orange-400 focus:outline-none transition duration-200'>
+          <button className='bg-[#da8b3c] text-white px-4 py-1 rounded hover:bg-orange-400 focus:outline-none'>
             Get Prices
           </button>
         </nav>
       </div>
 
       {/* Banner */}
-      <div className='bg-[#da8b3c] text-center py-2 text-white font-semibold'>
+      <div className='bg-[#da8b3c] text-center py-1 text-white font-medium text-sm'>
         We are happy to announce that Hybrid Shifting has acquired Pikkol.com
       </div>
 
@@ -138,7 +138,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className='lg:hidden bg-white shadow-md p-4'>
           <button
-            className='block w-full text-left py-2 text-[#1d305b] font-medium'
+            className='block w-full text-left py-1 text-[#1d305b] font-medium'
             onClick={() => setVisibleDropdown('Services')}
           >
             Services
@@ -149,7 +149,7 @@ const Header = () => {
                 <li key={idx}>
                   <a
                     href={item.path}
-                    className='block px-4 py-2 hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
+                    className='block px-4 py-1 hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
                   >
                     {item.label}
                   </a>
@@ -159,17 +159,21 @@ const Header = () => {
           )}
           <a
             href='/blog'
-            className='block py-2 text-[#1d305b] hover:bg-gray-100'
+            className='block py-1 text-[#1d305b] hover:bg-gray-100'
           >
             Blog
           </a>
           <a
             href='/about-us'
-            className='block py-2 text-[#1d305b] hover:bg-gray-100'
+            className='block py-1 text-[#1d305b] hover:bg-gray-100'
           >
             About Us
           </a>
-          <button className='bg-[#da8b3c] text-white w-full py-2 rounded-lg hover:bg-orange-400'>
+
+          <button
+            onClick={handleNavigate}
+            className='bg-[#da8b3c] text-white w-full py-1 rounded hover:bg-orange-400'
+          >
             Get Prices
           </button>
         </div>

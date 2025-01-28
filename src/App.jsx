@@ -12,6 +12,7 @@ import InternationalRelocation from './Pages/Services/internationalRelocation';
 import PackersAndMovers from './Pages/Services/packersAndMovers';
 import StorageFacility from './Pages/Services/storageFacility';
 import VehicleShifting from './Pages/Services/vehicleShifting';
+import ContactPage from './Pages/ContactUs';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='/blog' element={<Blog />} />
             <Route path='/blog/:id' element={<BlogPost />} />
             <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/contact-us' element={<ContactPage />} />
             {/* Service Pages */}
             <Route
               path='/services/hire-a-mini-truck'
