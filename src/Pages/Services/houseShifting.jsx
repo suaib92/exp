@@ -91,8 +91,8 @@ const houseShifting = () => {
             <div className='md:w-7/12 px-4 mb-8 md:mb-0'>
               <h1 className='text-4xl font-bold leading-tight text-gray-900'>
                 {selectedState
-                  ? `House Shifting in ${selectedStateObject.label}`
-                  : 'House Shifting'}
+                  ? `Residential Relocation  in ${selectedStateObject.label}`
+                  : 'Residential Relocation '}
               </h1>
 
               <p className='text-xl text-gray-600 mt-2'>
@@ -247,32 +247,29 @@ const houseShifting = () => {
           {/* Text Content */}
           <div className='md:w-1/2 md:pl-12 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 leading-snug'>
-              Pikkol House Shifting Services
+              YatiRelocations Residential Relocation Service
             </h2>
             <p className='text-gray-600 leading-relaxed text-lg'>
-              It’s imperative to look out for the best packers and movers in
-              Bangalore equipped with trained teams and robust safety protocols
-              to ensure a hassle-free moving experience. We, at{' '}
-              <span className='font-semibold text-blue-600'>Pikkol</span>, have
-              institutionalized best practices around safety and timely
-              deliveries to ensure a smooth transition. We offer end-to-end
-              relocation services that go a long way in providing you complete
-              peace of mind!
+              Moving to a new home? YatiRelocations ensures your household items
+              are packed, transported, and delivered safely. From delicate
+              glassware to bulky furniture, our team handles it all with care
+              and precision.
             </p>
           </div>
         </div>
       </section>
 
-      {/* How Pikkol Packers & Movers Works sections */}
+      {/* How YatiRelocations Packers & Movers Works sections */}
 
       <section>
         <div className='mb-16'>
           <div className='text-center mb-12'>
             <h2 className='text-3xl font-bold mb-4'>
-              Relocation Process Simplified With Pikkol
+              Relocation Process Simplified With YatiRelocations
             </h2>
             <p className='text-gray-600 max-w-3xl mx-auto'>
-              Pikkol has simplified and streamlined the house-shifting process
+              YatiRelocations has simplified and streamlined the house-shifting
+              process
             </p>
           </div>
 
@@ -453,20 +450,20 @@ const houseShifting = () => {
         </div>
       </section>
 
-      {/* //    Relocation simplified with Pikkol section */}
+      {/* //    Relocation simplified with YatiRelocations section */}
 
       <section>
         <div className='bg-gray-50 py-12 px-6'>
           <div className='max-w-4xl mx-auto text-center'>
             <h2 className='text-3xl font-bold text-gray-800 mb-6'>
-              Relocation simplified with Pikkol - Best Packers and Movers
-              Services
+              Relocation simplified with YatiRelocations - Best Packers and
+              Movers Services
             </h2>
             <p className='text-lg text-gray-600 mb-8 max-w-3xl mx-auto'>
-              Pikkol is considered the best packer and mover in Mumbai by our
-              base of loyal and satisfied clients. Here are some of the other
-              advantages we have on offer, making us a preferred choice when it
-              comes to selecting packers and movers:
+              YatiRelocations is considered the best packer and mover in Mumbai
+              by our base of loyal and satisfied clients. Here are some of the
+              other advantages we have on offer, making us a preferred choice
+              when it comes to selecting packers and movers:
             </p>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6'>
@@ -518,13 +515,13 @@ const houseShifting = () => {
         </div>
       </section>
 
-      {/* // Pikkol Customer Reviews sections */}
+      {/* // YatiRelocations Customer Reviews sections */}
 
       <section>
         <div className='bg-gray-50 py-12 px-6'>
           <div className='max-w-6xl mx-auto text-center relative'>
             <h2 className='text-4xl font-extrabold text-gray-800 mb-12'>
-              Pikkol Customer Reviews
+              YatiRelocations Customer Reviews
             </h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-500 ease-in-out transform'>
@@ -629,7 +626,7 @@ const houseShifting = () => {
           <p className='text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12'>
             With our mission to make every relocation a happy experience,
             coupled with our company-wide institutionalized best practices,
-            Pikkol has emerged as a preferred choice for your domestic
+            YatiRelocations has emerged as a preferred choice for your domestic
             relocation requirements.
           </p>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8'>

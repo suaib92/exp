@@ -7,10 +7,6 @@ const Header = () => {
   const [timeoutId, setTimeoutId] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleNavigate = () => {
-    window.location.href = '/contact-us'; // This will redirect the user to the 'contact-us' page
-  };
-
   const handleMouseEnter = (menuName) => {
     if (timeoutId) {
       clearTimeout(timeoutId);
@@ -26,18 +22,21 @@ const Header = () => {
   };
 
   const servicesMenu = [
+    { label: 'Residential Relocation', path: '/services/house-shifting' },
     {
-      label: 'Domestic Packers and Movers',
+      label: 'Office Relocation ',
       path: '/services/domestic-packers-and-movers',
     },
-    { label: 'House Shifting', path: '/services/house-shifting' },
-    { label: 'Vehicle Shifting', path: '/services/vehicle-shifting' },
-    { label: 'Hire a Mini Truck', path: '/services/hire-a-mini-truck' },
-    { label: 'Storage Facility', path: '/services/storage-facility' },
     {
-      label: 'International Relocations',
+      label: 'Commercial Logistics ',
       path: '/services/international-relocation',
     },
+    {
+      label: 'Packing and Unpacking Services ',
+      path: '/services/storage-facility',
+    },
+    { label: 'Vehicle Transport ', path: '/services/vehicle-shifting' },
+    { label: 'Hire a Mini Truck', path: '/services/hire-a-mini-truck' },
   ];
 
   return (
@@ -149,7 +148,7 @@ const Header = () => {
                 <li key={idx}>
                   <a
                     href={item.path}
-                    className='block px-4 py-1 hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
+                    className='block px-4 py-1 no-underline hover:bg-gray-100 text-sm text-[#1d305b] font-medium'
                   >
                     {item.label}
                   </a>
@@ -171,8 +170,8 @@ const Header = () => {
           </a>
 
           <button
-            onClick={handleNavigate}
-            className='bg-[#da8b3c] text-white w-full py-1 rounded hover:bg-orange-400'
+            class='bg-[#da8b3c] text-white w-full py-1 rounded hover:bg-orange-400'
+            onclick="window.location.href='/contact-us';"
           >
             Get Prices
           </button>
