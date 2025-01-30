@@ -1,7 +1,7 @@
 import React from 'react';
-import HomeImage from '../assets/img_home.jpg';
-import Monitor from '../assets/monitor.png';
-import TrainingImg from '../assets/training.jpg';
+import HomeImage from '../assets/bg-home.jpg';
+import Signle from '../assets/single.jpg';
+import TrainingImg from '../assets/120+.jpg';
 import Truck from '../assets/truck.jpg';
 import Lakh from '../assets/lakh.png';
 import BrandJson from '../JSONdata/brandLogo.json';
@@ -12,71 +12,36 @@ const Home = () => {
       <section className='relative bg-[#f7ddc8]'>
         {/* Background with Overlay */}
         <div
-          className='relative bg-cover bg-center min-h-screen flex items-center justify-center'
+          className='relative bg-no-repeat bg-center bg-cover min-h-screen flex items-center justify-start w-full'
           style={{
             backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${HomeImage})`,
+            backgroundSize: 'cover', // Ensures full image is shown
+            backgroundPosition: 'center', // Centers image
           }}
         >
           {/* Content Container */}
-          <div className='container mx-auto text-white px-8 lg:px-16'>
+          <div className='container mx-auto text-white px-6 sm:px-8 md:px-12 lg:px-16'>
             {/* Hero Content */}
-            <div className='flex flex-col items-center text-center lg:text-left lg:flex-row'>
+            <div className='flex flex-col lg:flex-row items-center lg:items-start text-left w-full py-10'>
               {/* Left Text Section */}
-              <div className='w-full flex flex-col items-center justify-center space-y-4 text-center py-10'>
-                <h1 className='text-6xl font-bold text-white-500'>
+              <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center space-y-4'>
+                <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-white'>
                   Reliable Packers <br /> and Movers You Can Trust
                 </h1>
-                <h2 className='text-2xl font-medium text-white-500'>
+                <h2 className='text-lg sm:text-xl md:text-2xl font-medium text-white'>
                   Yati Relocations makes your move seamless and stress-free,
                   <br /> whether it’s for your home or office.
                   <br />
-                  <span className='text-white-500'>#HappyMoving</span>
+                  <span className='text-white'>#HappyMoving</span>
                 </h2>
-                <a
-                  href='#'
-                  className='no-underline bg-[#da8b3c] text-white px-6 py-3 rounded-md shadow-md hover:bg-orange-400 transition duration-300'
-                >
-                  Calculate Your Moving Cost
-                </a>
-              </div>
-
-              {/* Right Stats Section */}
-
-              <div className='lg:w-1/2 grid grid-cols-2 md:grid-cols-2 gap-6 mt-1 lg:mt-0'>
-                {/* Cards */}
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-[#da8b3c]'>
-                    4.1{' '}
-                    <span className='text-sm text-[#1d305b] mt-2'>Rated</span>
-                  </div>
-                  <p className='text-[#1d305b] mt-2'>
-                    most trusted relocation firm on Google
-                  </p>
-                </div>
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-[#da8b3c]'>
-                    1 <span className='text-sm text-[#1d305b] mt-2'>Lakh+</span>
-                  </div>
-                  {/* <span className='text-sm text-[#1d305b]'>Lakh+</span> */}
-                  <p className='text-[#1d305b] mt-2'>Happy moves completed</p>
-                </div>
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-[#da8b3c]'>
-                    1<span className='text-sm text-[#1d305b] mt-2'>st</span>
-                  </div>
-
-                  <p className='text-[#1d305b] mt-2'>
-                    India's first pure play digital brand in relocation
-                  </p>
-                </div>
-
-                <div className='bg-white text-center p-6 rounded-lg shadow-lg'>
-                  <div className='text-5xl font-bold text-[#da8b3c]'>
-                    1 <span className='text-sm text-[#1d305b] mt-2'>st</span>
-                  </div>
-                  <p className=' text-[#1d305b] mt-2'>
-                    Winner <br /> of Emerge 50{' '}
-                  </p>
+                {/* Button Wrapper to center it */}
+                <div className='flex justify-center w-full'>
+                  <a
+                    href='contact-us'
+                    className='no-underline bg-[#da8b3c] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md shadow-md hover:bg-orange-400 transition duration-300'
+                  >
+                    Calculate Your Moving Cost
+                  </a>
                 </div>
               </div>
             </div>
@@ -85,7 +50,7 @@ const Home = () => {
       </section>
 
       {/* Platform Overview */}
-      <section className=' relative min-h-screen w-full overflow-hidden py-48 bg-white'>
+      {/* <section className=' relative min-h-screen w-full overflow-hidden py-48 bg-white'>
         <div className='container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12'>
           <div className='w-full h-72 md:w-1/2 mb-8 md:mb-0 flex justify-center'>
             <img
@@ -131,10 +96,86 @@ const Home = () => {
           className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#da8b3c]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
+      </section> */}
+
+      <section className='container mx-auto px-4 py-16'>
+        <div className='grid lg:grid-cols-2 gap-8 items-center'>
+          {/* Image Section */}
+          <div className='relative w-full flex justify-center'>
+            <img
+              src={Signle}
+              alt='Professional movers carrying boxes'
+              className='object-contain w-[250px] sm:w-[300px] md:w-[400px] lg:w-[400px] h-auto rounded-lg'
+            />
+          </div>
+
+          {/* Content Section */}
+          <div className='space-y-8 text-center items-center lg:text-left'>
+            {/* Title & Description */}
+            <div className='space-y-4'>
+              <h3 className='text-[#da8b3c] font-semibold text-lg uppercase tracking-wide'>
+                WHY CHOOSE US
+              </h3>
+              <h2 className='text-3xl sm:text-4xl font-bold text-slate-900'>
+                We Are A Professional Moving Company
+              </h2>
+              <p className='text-slate-600 leading-relaxed text-sm sm:text-base'>
+                Moving is more than just packing boxes – it’s about starting a
+                new chapter with ease. At Yati Relocations, we are dedicated to
+                providing reliable and professional moving services tailored to
+                your unique needs. Whether you're relocating your family to a
+                new home or transitioning your office to a new workspace, we’ve
+                got you covered every step of the way.
+              </p>
+            </div>
+
+            <div className='flex flex-col items-center lg:items-start text-center lg:text-left gap-15'>
+              {/* Buttons */}
+              <div className='flex flex-wrap justify-center gap-4'>
+                <button className='px-6 py-3 text-white bg-slate-900 hover:bg-slate-800 rounded-md'>
+                  KNOW MORE
+                </button>
+                <button className='px-6 py-3 bg-[#da8b3c] hover:bg-orange-400 text-white rounded-md'>
+                  CONTACT US
+                </button>
+              </div>
+
+              {/* Statistics */}
+              <div className='grid grid-cols-2 gap-8 pt-8'>
+                <div className='space-y-2'>
+                  <div className='flex items-baseline gap-1 justify-center'>
+                    <span className='text-4xl sm:text-5xl font-bold text-slate-900'>
+                      3
+                    </span>
+                    <span className='text-[#da8b3c] text-2xl sm:text-3xl font-bold'>
+                      +
+                    </span>
+                  </div>
+                  <p className='text-slate-600 text-sm sm:text-base'>
+                    Years of Experience
+                  </p>
+                </div>
+                <div className='space-y-2'>
+                  <div className='flex items-baseline gap-1 justify-center'>
+                    <span className='text-4xl sm:text-5xl font-bold text-slate-900'>
+                      1000
+                    </span>
+                    <span className='text-[#da8b3c] text-2xl sm:text-3xl font-bold'>
+                      +
+                    </span>
+                  </div>
+                  <p className='text-slate-600 text-sm sm:text-base'>
+                    Project Completed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Training Professionals */}
-      <section className='relative min-h-screen w-full overflow-hidden bg-white'>
+      <section className='relative h-[300px] min-h-screen w-full overflow-hidden bg-white'>
         <div
           className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#da8b3c]'
           style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
@@ -158,7 +199,7 @@ const Home = () => {
               <img
                 src={TrainingImg}
                 alt='Training session'
-                className='w-full h-full rounded-lg shadow-lg object-cover'
+                className='object-contain w-[250px] sm:w-[300px] md:w-[400px] lg:w-[400px]  h-2/3 rounded-lg'
               />
             </div>
           </div>
@@ -170,18 +211,18 @@ const Home = () => {
       </section>
 
       {/* Containerized Fleet */}
-      <section className='relative min-h-[600px] overflow-hidden'>
+      <section className='  relative min-h-[600px] overflow-hidden'>
         <div className='absolute inset-0 w-full h-full'>
           <img
             src={Truck}
             alt='Vintage delivery truck'
-            width={800}
+            width={900}
             height={600}
             className='object-cover w-full h-full'
           />
         </div>
         <div
-          className='absolute inset-0 bg-white'
+          className='absolute inset-0 bg-[#faefe5] '
           style={{ clipPath: 'polygon(45% 0, 100% 0, 100% 100%, 25% 100%)' }}
         />
         <div className='relative container mx-auto px-4 py-16 md:py-24'>
