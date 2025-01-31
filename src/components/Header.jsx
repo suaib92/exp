@@ -40,7 +40,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='bg-[#f7ddc8] sticky top-0 shadow-md z-50'>
+    <header className='bg-white sticky top-0 shadow-md z-50'>
       <div className='container mx-auto flex justify-between items-center py-2 px-4'>
         {/* Logo */}
         <div className='text-xl font-bold text-[#1d305b]'>
@@ -129,8 +129,9 @@ const Header = () => {
       </div>
 
       {/* Banner */}
-      <div className='bg-[#da8b3c] text-center py-1 text-white font-medium text-sm'>
-        We are happy to announce that Hybrid Shifting has acquired Pikkol.com
+      <div className='bg-[#1d305b] text-center py-1 text-white font-medium text-sm'>
+        We are happy to announce that Hybrid Shifting has acquired
+        YatiRelocation.com
       </div>
 
       {/* Mobile Dropdown */}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='bg-[#f7ddc8] text-[#1d305b] py-10'>
+    <footer className='bg-[#dbe3f7]  text-[#1d305b] py-10'>
       <div className='container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
         {/* Know More Section */}
         <div>
@@ -121,27 +121,27 @@ const Footer = () => {
             </a>
             <a
               href='#twitter'
-              className='text-white hover:text-blue-300'
+              className='text-white hover:text-[#2c447b] '
               aria-label='Twitter'
             >
               <i className='fab fa-twitter'></i>
             </a>
             <a
               href='#youtube'
-              className='text-white hover:text-red-500'
+              className='text-white hover:text-[#2c447b] '
               aria-label='YouTube'
             >
               <i className='fab fa-youtube'></i>
             </a>
           </div>
-          <button className='bg-[#da8b3c] text-white px-4 py-2 rounded mt-4 w-full sm:w-auto'>
+          <button className='bg-[#1d305b] text-white px-4 py-2 rounded mt-4 w-full sm:w-auto'>
             Get Prices
           </button>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className='bg-[#da8b3c] text-white text-sm text-center py-4 mt-6'>
+      <div className='bg-[#1d305b] text-white text-sm text-center py-4 mt-6'>
         <div className='flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 px-6'>
           <p>🌍 Global / English</p>
           <p>Terms and Conditions | Privacy Policy</p>

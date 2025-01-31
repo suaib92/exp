@@ -9,7 +9,7 @@ import BrandJson from '../JSONdata/brandLogo.json';
 const Home = () => {
   return (
     <>
-      <section className='relative bg-[#f7ddc8]'>
+      <section className='relative bg-[#dbe3f7] '>
         {/* Background with Overlay */}
         <div
           className='relative bg-no-repeat bg-center bg-cover min-h-screen flex items-center justify-start w-full'
@@ -38,7 +38,7 @@ const Home = () => {
                 <div className='flex justify-center w-full'>
                   <a
                     href='contact-us'
-                    className='no-underline bg-[#da8b3c] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md shadow-md hover:bg-orange-400 transition duration-300'
+                    className='no-underline bg-[#1d305b] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md shadow-md hover:bg-[#2c447b]  transition duration-300'
                   >
                     Calculate Your Moving Cost
                   </a>
@@ -116,10 +116,10 @@ const Home = () => {
               <h3 className='text-[#da8b3c] font-semibold text-lg uppercase tracking-wide'>
                 WHY CHOOSE US
               </h3>
-              <h2 className='text-3xl sm:text-4xl font-bold text-slate-900'>
+              <h2 className='text-3xl sm:text-4xl font-bold text-[#1d305b]'>
                 We Are A Professional Moving Company
               </h2>
-              <p className='text-slate-600 leading-relaxed text-sm sm:text-base'>
+              <p className='text-[#2c447b] leading-relaxed text-sm sm:text-base'>
                 Moving is more than just packing boxes – it’s about starting a
                 new chapter with ease. At Yati Relocations, we are dedicated to
                 providing reliable and professional moving services tailored to
@@ -132,7 +132,7 @@ const Home = () => {
             <div className='flex flex-col items-center lg:items-start text-center lg:text-left gap-15'>
               {/* Buttons */}
               <div className='flex flex-wrap justify-center gap-4'>
-                <button className='px-6 py-3 text-white bg-slate-900 hover:bg-slate-800 rounded-md'>
+                <button className='px-6 py-3 text-white bg-[#1d305b] hover:bg-[#2c447b] rounded-md'>
                   KNOW MORE
                 </button>
                 <button className='px-6 py-3 bg-[#da8b3c] hover:bg-orange-400 text-white rounded-md'>
@@ -144,27 +144,27 @@ const Home = () => {
               <div className='grid grid-cols-2 gap-8 pt-8'>
                 <div className='space-y-2'>
                   <div className='flex items-baseline gap-1 justify-center'>
-                    <span className='text-4xl sm:text-5xl font-bold text-slate-900'>
+                    <span className='text-4xl sm:text-5xl font-bold text-[#1d305b]'>
                       3
                     </span>
                     <span className='text-[#da8b3c] text-2xl sm:text-3xl font-bold'>
                       +
                     </span>
                   </div>
-                  <p className='text-slate-600 text-sm sm:text-base'>
+                  <p className='text-[#2c447b] text-sm sm:text-base'>
                     Years of Experience
                   </p>
                 </div>
                 <div className='space-y-2'>
                   <div className='flex items-baseline gap-1 justify-center'>
-                    <span className='text-4xl sm:text-5xl font-bold text-slate-900'>
+                    <span className='text-4xl sm:text-5xl font-bold text-[#1d305b]'>
                       1000
                     </span>
                     <span className='text-[#da8b3c] text-2xl sm:text-3xl font-bold'>
                       +
                     </span>
                   </div>
-                  <p className='text-slate-600 text-sm sm:text-base'>
+                  <p className='text-[#2c447b] text-sm sm:text-base'>
                     Project Completed
                   </p>
                 </div>
@@ -177,17 +177,17 @@ const Home = () => {
       {/* Training Professionals */}
       <section className='relative h-[300px] min-h-screen w-full overflow-hidden bg-white'>
         <div
-          className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#da8b3c]'
+          className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#1d305b]'
           style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
         />
         <div className='relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8'>
           <div className='grid gap-12 lg:grid-cols-2'>
             <div className='space-y-8  my-20'>
-              <h2 className='text-7xl font-bold text-gray-900'>120+</h2>
-              <h3 className='text-4xl font-medium text-gray-900 mt-2'>
+              <h2 className='text-7xl font-bold text-[#1d305b]'>120+</h2>
+              <h3 className='text-4xl font-medium text-[#1d305b] mt-2'>
                 skilled professionals
               </h3>
-              <p className='text-lg leading-relaxed text-gray-600'>
+              <p className='text-lg leading-relaxed text-[#2c447b] '>
                 To guarantee the finest care for your treasures and memories,
                 our packer and mover teams go through extensive ongoing training
                 on standard operating procedures for handling, loading, packing,
@@ -205,7 +205,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#da8b3c]'
+          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#1d305b]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
       </section>
@@ -222,20 +222,20 @@ const Home = () => {
           />
         </div>
         <div
-          className='absolute inset-0 bg-[#faefe5] '
+          className='absolute inset-0 bg-[#dbe3f7]  '
           style={{ clipPath: 'polygon(45% 0, 100% 0, 100% 100%, 25% 100%)' }}
         />
         <div className='relative container mx-auto px-4 py-16 md:py-24'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
             <div></div>
             <div className='space-y-6 text-left'>
-              <h2 className='text-6xl md:text-7xl font-bold text-gray-900'>
+              <h2 className='text-6xl md:text-7xl font-bold text-[#1d305b]'>
                 60<span className='text-primary'>+</span>
               </h2>
-              <h3 className='text-3xl md:text-4xl font-semibold text-gray-800'>
+              <h3 className='text-3xl md:text-4xl font-semibold text-[#1d305b]'>
                 containerized vehicles
               </h3>
-              <p className='text-lg text-gray-900 leading-relaxed max-w-xl'>
+              <p className='text-lg text-[#2c447b]  leading-relaxed max-w-xl'>
                 We make moving hassle-free! Our vehicles are fully equipped to
                 keep your belongings safe and secure. With a wide range of
                 specialized options, we carefully match the right vehicle to the
@@ -256,16 +256,16 @@ const Home = () => {
               alt='1 Lakh+ represented in customer photos'
               className='w-full max-w-2xl'
             />
-            <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-6'>
+            <h2 className='text-3xl md:text-4xl font-bold text-[#1d305b]  mb-6'>
               Our Happy Customers
             </h2>
-            <p className='text-lg text-gray-600'>
+            <p className='text-lg text-[#2c447b] '>
               At YatiRelocations, we don’t just move belongings – we deliver
               peace of mind. Every day, we strive to make your moving experience
               smooth, safe, and worry-free. Here’s what some of our delighted
               customers have to say:
             </p>
-            <ul className='list-disc list-outside text-gray-800 mb-6 space-y-2'>
+            <ul className='list-disc list-outside text-[#2c447b]  mb-6 space-y-2'>
               <li>
                 YatiRelocations went above and beyond, The team was not only
                 efficient but also very thoughtful with my fragile items. Highly
@@ -285,7 +285,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#da8b3c]'
+          className='absolute bottom-0 right-0 h-[50vh] w-[50vw] translate-x-1/4 translate-y-1/4 bg-[#1d305b]'
           style={{ clipPath: 'polygon(100% 100%, 100% 0, 0 100%)' }}
         />
       </section>
@@ -295,14 +295,14 @@ const Home = () => {
       <section className=' relative min-h-screen w-full overflow-hidden py-16 bg-white'>
         <div className='container mx-auto px-4'>
           <div
-            className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#da8b3c]'
+            className='absolute left-0 top-0 h-[30vw] w-[50vw] -translate-x-1/4 -translate-y-1/4 bg-[#1d305b]'
             style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }}
           />
 
-          <h2 className='text-4xl font-semibold text-center mb-6'>
+          <h2 className='text-4xl font-semibold text-center mb-6 text-[#1d305b] '>
             We are trusted by many
           </h2>
-          <p className='text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12'>
+          <p className='text-center text-lg text-[#2c447b]  leading-relaxed max-w-xl mx-auto mb-12'>
             We take pride in being the trusted choice for packing and moving
             services. Join the growing list of satisfied customers who choose
             YatiRelocations for a stress-free moving experience!
