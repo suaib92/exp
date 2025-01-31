@@ -173,13 +173,15 @@ const Header = () => {
           >
             About Us
           </a>
-
-          <button
+          
+          <a href="contact-us">
+           <button
             class="bg-[#da8b3c] text-white w-full py-1 rounded hover:bg-orange-400"
             onclick="window.location.href='/contact-us';"
           >
             Get Prices
           </button>
+          </a>
         </div>
       )}
     </header>
