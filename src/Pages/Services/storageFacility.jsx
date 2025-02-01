@@ -261,7 +261,7 @@ const storageFacility = () => {
               We are a reputed moving company providing exceptional packing,
               moving, and storage facilities across India. We pride ourselves in
               building our reputation on a cornerstone of quality services. At
-              Pikkol, we offer warehousing services with complete flexibility.
+              YatiRelocations, we offer warehousing services with complete flexibility.
               Our warehouses are 100% safe, spacious, and are managed under
               strict supervision round the clock. You can count on us for safe
               and economical storage facilities.
@@ -270,16 +270,16 @@ const storageFacility = () => {
         </div>
       </section>
 
-      {/* How Pikkol Packers & Movers Works sections */}
+      {/* How YatiRelocations Packers & Movers Works sections */}
 
       <section>
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
-              Experience Convenience With Pikkol To Store Your Valuable Goods
+              Experience Convenience With YatiRelocations To Store Your Valuable Goods
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Pikkol has simplified the whole process! Take a look at the most
+            YatiRelocations has simplified the whole process! Take a look at the most
               suitable way to store your stuff in India.
             </p>
           </div>
@@ -290,7 +290,7 @@ const storageFacility = () => {
               </div>
               <h3 className="font-semibold mb-2">1. You Book Online</h3>
               <p>
-                Pikkol specializes in offering storage & warehousing services,
+              YatiRelocations specializes in offering storage & warehousing services,
                 tailor-made for specific categories of goods. Book online, and
                 we'll deliver your boxes with minimal charge.
               </p>
@@ -339,7 +339,7 @@ pricee */}
 <section className="bg-gray-50 py-10">
       <div className="max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg">
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">
-          Pricing Plans for Pikkol Storage Facility
+          Pricing Plans for YatiRelocations Storage Facility
         </h2>
         <div className="overflow-x-auto">
           <table className="table-auto w-full border border-gray-300">
@@ -424,7 +424,7 @@ pricee */}
               <h3 className="font-semibold mb-2">Household Storage</h3>
               <p>
                 If you are searching for a place to store your house stuff, we
-                can provide you the best household storage facility. Pikkol also
+                can provide you the best household storage facility. YatiRelocations also
                 provides tailored and ultra-personal automotive storage service,
                 providing a highly secure 24x7 monitored rodent-proof
                 environment for your vehicle.
@@ -434,7 +434,7 @@ pricee */}
             <div className="text-center bg-white shadow-lg rounded-lg p-6">
               <h3 className="font-semibold mb-2">Commercial Storage</h3>
               <p>
-                Running out of space at your business? Pikkol offers world-class
+                Running out of space at your business? YatiRelocations offers world-class
                 business storage services and promises to keep all your assets
                 undamaged and safe all the time.
               </p>
@@ -443,16 +443,16 @@ pricee */}
         </div>
       </section>
 
-      {/* Specialities of Pikkol storage space */}
+      {/* Specialities of YatiRelocations storage space */}
 
       <section className="py-16 bg-gray-50 ">
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">
-              Specialities of Pikkol Storage Space
+              Specialities of YatiRelocations Storage Space
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              At Pikkol, we value the safety of your belongings and offer a
+              At YatiRelocations, we value the safety of your belongings and offer a
               world-class service experience with our well-maintained storage
               spaces. They come with the following facilities:
             </p>
@@ -517,7 +517,7 @@ pricee */}
           <p className="text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12">
             With our mission to make every relocation a happy experience,
             coupled with our company-wide institutionalized best practices,
-            Pikkol has emerged as a preferred choice for your domestic
+            YatiRelocations has emerged as a preferred choice for your domestic
             relocation requirements.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -540,13 +540,13 @@ pricee */}
         <div className="container mx-auto flex flex-col md:flex-row items-center px-4">
           <div className="md:w-1/2 md:pl-12 mb-8 md:mb-0">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Advantages we offer at pikkol
+              Advantages we offer at YatiRelocations
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
               Count on us to offer you fully customized storage facilities!
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Advantages we offer at pikkol Count on us to offer you fully
+              Advantages we offer at YatiRelocations Count on us to offer you fully
               customized storage facilities! With absolutely safe warehousing
               facilities spread across the country, you can be sure that your
               possessions are in capable hands. Not only can you rest assured
@@ -581,13 +581,13 @@ pricee */}
         </div>
       </section>
 
-      {/* // Pikkol Customer Reviews sections */}
+      {/* // YatiRelocations Customer Reviews sections */}
 
       <section>
         <div className="bg-gray-50 py-12 px-6">
           <div className="max-w-6xl mx-auto text-center relative">
             <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
-              Pikkol Customer Reviews
+            YatiRelocations Customer Reviews
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-500 ease-in-out transform">

@@ -218,7 +218,7 @@ const InternationalRelocation = () => {
               International packers and movers at lowest prices
             </h2>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Planning an overseas move? Hire Pikkol. We are the world’s premier
+              Planning an overseas move? Hire YatiRelocations. We are the world’s premier
               international moving company, and we can help you move to any
               corner of the globe seamlessly with our international relocation
               services. We have moved thousands of people – families,
@@ -236,7 +236,7 @@ const InternationalRelocation = () => {
           {/* Heading Section */}
           <div className="text-center mb-12 px-4">
             <h2 className="text-3xl font-bold mb-6">
-              Pikkol International Packers & Movers Services
+            YatiRelocations International Packers & Movers Services
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">Pre-move services</p>
           </div>
@@ -386,10 +386,10 @@ const InternationalRelocation = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center px-4">
           <div className="md:w-1/2 md:pl-12 mb-8 md:mb-0">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Pikkol international packers and movers unique selling points
+            YatiRelocations international packers and movers unique selling points
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Pikkol International Packers and Movers is one of the leading
+            YatiRelocations International Packers and Movers is one of the leading
               moving companies. We provide door-to-door and customized
               professional packing & moving services from any destination in
               India. We promise to offer the best packing-moving services since
@@ -424,13 +424,13 @@ const InternationalRelocation = () => {
         </div>
       </section>
 
-{/* // Pikkol Customer Reviews sections */}
+{/* // YatiRelocations Customer Reviews sections */}
 
 <section>
         <div className='bg-gray-50 py-12 px-6'>
           <div className='max-w-6xl mx-auto text-center relative'>
             <h2 className='text-4xl font-extrabold text-gray-800 mb-12'>
-              Pikkol Customer Reviews
+            YatiRelocations Customer Reviews
             </h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-500 ease-in-out transform'>
@@ -535,7 +535,7 @@ const InternationalRelocation = () => {
           <p className='text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12'>
             With our mission to make every relocation a happy experience,
             coupled with our company-wide institutionalized best practices,
-            Pikkol has emerged as a preferred choice for your domestic
+            YatiRelocations has emerged as a preferred choice for your domestic
             relocation requirements.
           </p>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8'>

@@ -246,11 +246,11 @@ const vehicleShifting = () => {
           {/* Text Content */}
           <div className='md:w-1/2 md:pl-12 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 leading-snug'>
-              Pikkol Vehicle Shifting services
+            YatiRelocations Vehicle Shifting services
             </h2>
             <p className='text-gray-600 leading-relaxed text-lg'>
               Looking for vehicle shifting services? With over a decade of
-              experience, Pikkol ensures safe and secure transportation of cars
+              experience, YatiRelocations ensures safe and secure transportation of cars
               and bikes across India. You can rely on us to deliver your vehicle
               damage-free. We have a wide range of trailers and containerised
               trucks handled by experienced drivers for door to door vehicle
@@ -354,13 +354,13 @@ const vehicleShifting = () => {
         </div>
       </section>
 
-      {/* How Pikkol Packers & Movers Works sections */}
+      {/* How YatiRelocations Packers & Movers Works sections */}
 
       <section>
         <div className='mb-16'>
           <div className='text-center mb-12'>
             <h2 className='text-3xl font-bold mb-4'>
-              Pikkol Vehicle Shifting: complete shifting process
+            YatiRelocations Vehicle Shifting: complete shifting process
             </h2>
             <p className='text-gray-600 max-w-3xl mx-auto'>
               We understand the emotion and value of your vehicle/s. With our
@@ -405,7 +405,7 @@ const vehicleShifting = () => {
         <div className='container mx-auto flex flex-col md:flex-row items-center px-4'>
           <div className='md:w-1/2 md:pl-12 mb-8 md:mb-0'>
             <h2 className='text-3xl font-semibold text-gray-800 mb-4'>
-              Pikkol Vehicle shifting unique selling points
+            YatiRelocations Vehicle shifting unique selling points
             </h2>
             <p className='text-gray-700 text-lg leading-relaxed mb-4'>
               Our experience and commitment to customer service ensure that your
@@ -438,13 +438,13 @@ const vehicleShifting = () => {
         </div>
       </section>
 
-      {/* // Pikkol Customer Reviews sections */}
+      {/* // YatiRelocations Customer Reviews sections */}
 
       <section>
         <div className='bg-gray-50 py-12 px-6'>
           <div className='max-w-6xl mx-auto text-center relative'>
             <h2 className='text-4xl font-extrabold text-gray-800 mb-12'>
-              Pikkol Customer Reviews
+            YatiRelocations Customer Reviews
             </h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-500 ease-in-out transform'>
@@ -549,7 +549,7 @@ const vehicleShifting = () => {
           <p className='text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12'>
             With our mission to make every relocation a happy experience,
             coupled with our company-wide institutionalized best practices,
-            Pikkol has emerged as a preferred choice for your domestic
+            YatiRelocations has emerged as a preferred choice for your domestic
             relocation requirements.
           </p>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8'>

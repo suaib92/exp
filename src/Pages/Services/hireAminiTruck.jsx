@@ -246,10 +246,10 @@ const hireAminiTruck = () => {
           {/* Text Content */}
           <div className='md:w-1/2 md:pl-12 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 leading-snug'>
-              Pikkol truck hiring services
+            YatiRelocations truck hiring services
             </h2>
             <p className='text-gray-600 leading-relaxed text-lg'>
-              Pikkol offers truck hiring and rental services across India,
+            YatiRelocations offers truck hiring and rental services across India,
               handling all kinds of transportation and moving requirements. Use
               our services to move goods, household items or office equipment
               within the same city or to another city. We also offer interstate
@@ -270,7 +270,7 @@ const hireAminiTruck = () => {
         </div>
       </section>
 
-      {/* How Pikkol Packers & Movers Works sections */}
+      {/* How YatiRelocations Packers & Movers Works sections */}
 
       <section>
         <div className='mb-16'>
@@ -323,11 +323,11 @@ const hireAminiTruck = () => {
         <div className='container mx-auto flex flex-col md:flex-row items-center px-4'>
           <div className='md:w-1/2 md:pl-12 mb-8 md:mb-0'>
             <h2 className='text-3xl font-semibold text-gray-800 mb-4'>
-              Pikkol truck hiring unique selling points
+            YatiRelocations truck hiring unique selling points
             </h2>
             <p className='text-gray-700 text-lg leading-relaxed mb-4'>
               With a quality vehicle fleet, exceptional service commitment and
-              rich industry experience, Pikkol promises to deliver customised
+              rich industry experience, YatiRelocations promises to deliver customised
               and economical transportation solutions to match your expectations
               and exceed industry benchmarks. We aim to craft a perfect solution
               for you by keeping your budget in mind. Some of the advantages
@@ -442,13 +442,13 @@ const hireAminiTruck = () => {
         </div>
       </section>
 
-      {/* // Pikkol Customer Reviews sections */}
+      {/* // YatiRelocations Customer Reviews sections */}
 
       <section>
         <div className='bg-gray-50 py-12 px-6'>
           <div className='max-w-6xl mx-auto text-center relative'>
             <h2 className='text-4xl font-extrabold text-gray-800 mb-12'>
-              Pikkol Customer Reviews
+            YatiRelocations Customer Reviews
             </h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-500 ease-in-out transform'>
@@ -553,7 +553,7 @@ const hireAminiTruck = () => {
           <p className='text-center text-lg text-gray-600 leading-relaxed max-w-xl mx-auto mb-12'>
             With our mission to make every relocation a happy experience,
             coupled with our company-wide institutionalized best practices,
-            Pikkol has emerged as a preferred choice for your domestic
+            YatiRelocations has emerged as a preferred choice for your domestic
             relocation requirements.
           </p>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8'>
